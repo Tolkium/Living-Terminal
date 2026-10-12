@@ -2,7 +2,7 @@
 
 A live terminal-style desktop wallpaper for [Wallpaper Engine](https://www.wallpaperengine.io/). It turns your desktop into a retro terminal dashboard: world clocks, countdown timers, live CPU and network graphs, an audio visualizer, what's playing right now, ASCII art, and a Game of Life that runs while your music is off.
 
-![Living-Terminal preview](preview.jpg)
+<p align="center"><img src="preview.jpg" alt="Living-Terminal on a portrait (vertical) monitor" width="420"></p>
 
 **Version 1.0.0**
 
