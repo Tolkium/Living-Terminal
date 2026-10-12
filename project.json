@@ -1,0 +1,2082 @@
+{
+  "contentrating": "Everyone",
+  "description": "Personal hi-tech terminal wallpaper: system info, audio visualizer, graphs, clocks, timers and ASCII art.",
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "themegroup": {
+        "index": 0,
+        "order": 100,
+        "type": "group",
+        "text": "Theme",
+        "value": ""
+      },
+      "theme": {
+        "index": 1,
+        "order": 101,
+        "group": "themegroup",
+        "type": "combo",
+        "text": "Theme",
+        "value": "dark",
+        "condition": "",
+        "options": [
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      "backgroundcolor": {
+        "index": 2,
+        "order": 102,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Background : <small>#0d1110</small>",
+        "value": "0.050980392156862744 0.06666666666666667 0.06274509803921569",
+        "condition": "theme.value === \"custom\""
+      },
+      "textcolor": {
+        "index": 3,
+        "order": 103,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Text Color : <small>#e4edea</small>",
+        "value": "0.8941176470588236 0.9294117647058824 0.9176470588235294",
+        "condition": "theme.value === \"custom\""
+      },
+      "newproperty1": {
+        "index": 4,
+        "order": 104,
+        "group": "themegroup",
+        "type": "text",
+        "text": "<b>Note: </b> Changing colors below will affect ASCII art. ASCII art colors are picked by similarity",
+        "value": false,
+        "condition": "theme.value === \"custom\""
+      },
+      "black": {
+        "index": 5,
+        "order": 105,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Black : #0d1110",
+        "value": "0.050980392156862744 0.06666666666666667 0.06274509803921569",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-black": {
+        "index": 6,
+        "order": 106,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Black : #5c6370",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "theme.value === \"custom\""
+      },
+      "red": {
+        "index": 7,
+        "order": 107,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Red : #e06c75",
+        "value": "0.8784313725490196 0.4235294117647059 0.4588235294117647",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-red": {
+        "index": 8,
+        "order": 108,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Red : #f28b82",
+        "value": "0.9490196078431372 0.5450980392156862 0.5098039215686274",
+        "condition": "theme.value === \"custom\""
+      },
+      "green": {
+        "index": 9,
+        "order": 109,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Green : #98c379",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-green": {
+        "index": 10,
+        "order": 110,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Green : #b1f2a7",
+        "value": "0.6941176470588235 0.9490196078431372 0.6549019607843137",
+        "condition": "theme.value === \"custom\""
+      },
+      "yellow": {
+        "index": 11,
+        "order": 111,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Yellow : #e5c07b",
+        "value": "0.8980392156862745 0.7529411764705882 0.4823529411764706",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-yellow": {
+        "index": 12,
+        "order": 112,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Yellow : #ffdd88",
+        "value": "1 0.8666666666666667 0.5333333333333333",
+        "condition": "theme.value === \"custom\""
+      },
+      "blue": {
+        "index": 13,
+        "order": 113,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Blue : #61afef",
+        "value": "0.3803921568627451 0.6862745098039216 0.9372549019607843",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-blue": {
+        "index": 14,
+        "order": 114,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Blue : #82aaff",
+        "value": "0.5098039215686274 0.6666666666666666 1",
+        "condition": "theme.value === \"custom\""
+      },
+      "magenta": {
+        "index": 15,
+        "order": 115,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Magenta : #c678dd",
+        "value": "0.7764705882352941 0.47058823529411764 0.8666666666666667",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-magenta": {
+        "index": 16,
+        "order": 116,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Magenta : #d4bfff",
+        "value": "0.8313725490196079 0.7490196078431373 1",
+        "condition": "theme.value === \"custom\""
+      },
+      "cyan": {
+        "index": 17,
+        "order": 117,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Cyan : #56b6c2",
+        "value": "0.33725490196078434 0.7137254901960784 0.7607843137254902",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-cyan": {
+        "index": 18,
+        "order": 118,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright Cyan : #9aedfe",
+        "value": "0.6039215686274509 0.9294117647058824 0.996078431372549",
+        "condition": "theme.value === \"custom\""
+      },
+      "white": {
+        "index": 19,
+        "order": 119,
+        "group": "themegroup",
+        "type": "color",
+        "text": "White : #e4edea",
+        "value": "0.8941176470588236 0.9294117647058824 0.9176470588235294",
+        "condition": "theme.value === \"custom\""
+      },
+      "bright-white": {
+        "index": 20,
+        "order": 120,
+        "group": "themegroup",
+        "type": "color",
+        "text": "Bright White : #ffffff",
+        "value": "1 1 1",
+        "condition": "theme.value === \"custom\""
+      },
+      "layout": {
+        "index": 21,
+        "order": 121,
+        "type": "group",
+        "text": "Layout",
+        "value": ""
+      },
+      "layout_direction": {
+        "index": 22,
+        "order": 122,
+        "group": "layout",
+        "type": "combo",
+        "text": "Terminal Direction",
+        "value": "vertical",
+        "condition": "",
+        "options": [
+          {
+            "label": "Vertical",
+            "value": "vertical"
+          },
+          {
+            "label": "Horizontal",
+            "value": "horizontal"
+          }
+        ]
+      },
+      "layout_position": {
+        "index": 23,
+        "order": 123,
+        "group": "layout",
+        "type": "combo",
+        "text": "Position",
+        "value": "right",
+        "condition": "layout_direction.value === \"vertical\"",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      "layout_alignment": {
+        "index": 24,
+        "order": 124,
+        "group": "layout",
+        "type": "combo",
+        "text": "Alignment",
+        "value": "top",
+        "condition": "layout_direction.value === \"horizontal\"",
+        "options": [
+          {
+            "label": "Top",
+            "value": "top"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Bottom",
+            "value": "bottom"
+          }
+        ]
+      },
+      "layout_vertical_order": {
+        "index": 25,
+        "order": 125,
+        "group": "layout",
+        "type": "combo",
+        "text": "Order",
+        "value": "time",
+        "condition": "",
+        "options": [
+          {
+            "label": "Time First",
+            "value": "time"
+          },
+          {
+            "label": "Overview First",
+            "value": "overview"
+          }
+        ]
+      },
+      "layout_audio_location": {
+        "index": 26,
+        "order": 126,
+        "group": "layout",
+        "type": "combo",
+        "text": "Audio Location",
+        "value": "overview",
+        "condition": "",
+        "options": [
+          {
+            "label": "Time",
+            "value": "time"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Overview",
+            "value": "overview"
+          }
+        ]
+      },
+      "layout_divider": {
+        "index": 27,
+        "order": 127,
+        "group": "layout",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": ""
+      },
+      "hideitoobigiwarning": {
+        "index": 28,
+        "order": 128,
+        "group": "layout",
+        "type": "bool",
+        "text": "Hide 'Terminal Too Big' Warning",
+        "value": false,
+        "condition": ""
+      },
+      "layout_divider2": {
+        "index": 29,
+        "order": 129,
+        "group": "layout",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": ""
+      },
+      "layout_custom_margin": {
+        "index": 30,
+        "order": 130,
+        "group": "layout",
+        "type": "bool",
+        "text": "Custom Margins",
+        "value": false,
+        "condition": ""
+      },
+      "shifttop": {
+        "index": 31,
+        "order": 131,
+        "group": "layout",
+        "type": "textinput",
+        "text": "Top (px)",
+        "value": "",
+        "condition": "layout_custom_margin.value == true"
+      },
+      "shiftbottom": {
+        "index": 32,
+        "order": 132,
+        "group": "layout",
+        "type": "textinput",
+        "text": "Bottom (px)",
+        "value": "",
+        "condition": "layout_custom_margin.value == true"
+      },
+      "shiftleft": {
+        "index": 33,
+        "order": 133,
+        "group": "layout",
+        "type": "textinput",
+        "text": "Left (px)",
+        "value": "",
+        "condition": "layout_custom_margin.value == true"
+      },
+      "shiftright": {
+        "index": 34,
+        "order": 134,
+        "group": "layout",
+        "type": "textinput",
+        "text": "Right (px)",
+        "value": "",
+        "condition": "layout_custom_margin.value == true"
+      },
+      "leaveemptyfordefaults": {
+        "index": 35,
+        "order": 135,
+        "group": "layout",
+        "type": "text",
+        "text": "<small>Leave Empty for Defaults</small>",
+        "value": false,
+        "condition": "layout_custom_margin.value == true"
+      },
+      "appearance": {
+        "index": 36,
+        "order": 136,
+        "type": "group",
+        "text": "Appearance",
+        "value": ""
+      },
+      "schemecolor": {
+        "index": 37,
+        "order": 137,
+        "group": "appearance",
+        "type": "color",
+        "text": "Window Scheme Color",
+        "value": "0.050980392156862744 0.06666666666666667 0.06274509803921569",
+        "condition": ""
+      },
+      "textsize": {
+        "index": 38,
+        "order": 138,
+        "group": "appearance",
+        "type": "slider",
+        "text": "Font Size (pt)",
+        "value": 15,
+        "condition": "",
+        "fraction": true,
+        "min": 4,
+        "max": 48,
+        "step": 0.1,
+        "precision": 2
+      },
+      "times": {
+        "index": 39,
+        "order": 139,
+        "type": "group",
+        "text": "Times",
+        "value": ""
+      },
+      "hidetimepanel": {
+        "index": 40,
+        "order": 140,
+        "group": "times",
+        "type": "bool",
+        "text": "Hide Time Panel<br><small>Also hides timers and graphs</small>",
+        "value": false,
+        "condition": ""
+      },
+      "dateformat": {
+        "index": 41,
+        "order": 141,
+        "group": "times",
+        "type": "combo",
+        "text": "Date Format",
+        "value": "ddmmyyyy",
+        "condition": "hidetimepanel.value === false",
+        "options": [
+          {
+            "label": "DD/MM/YYYY",
+            "value": "ddmmyyyy"
+          },
+          {
+            "label": "MM/DD/YYYY",
+            "value": "mmddyyyy"
+          },
+          {
+            "label": "YYYY/MM/DD",
+            "value": "yyyymmdd"
+          }
+        ]
+      },
+      "timeformat": {
+        "index": 42,
+        "order": 142,
+        "group": "times",
+        "type": "combo",
+        "text": "Time Format",
+        "value": "24",
+        "condition": "hidetimepanel.value === false",
+        "options": [
+          {
+            "label": "24 hour",
+            "value": "24"
+          },
+          {
+            "label": "12 hour",
+            "value": "12"
+          }
+        ]
+      },
+      "newproperty": {
+        "index": 43,
+        "order": 143,
+        "group": "times",
+        "type": "text",
+        "text": "Timezone: a zone name like <b>Europe/Berlin</b> or <b>America/Los_Angeles</b> (follows daylight saving time), or an hour offset like -7 or 5.5.<small><br>Zone list: en.wikipedia.org/wiki/List_of_tz_database_time_zones</small>",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "time0": {
+        "index": 44,
+        "order": 144,
+        "group": "times",
+        "type": "bool",
+        "text": "Time-0",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "clabel0": {
+        "index": 45,
+        "order": 145,
+        "group": "times",
+        "type": "textinput",
+        "text": "Label",
+        "value": "HOME",
+        "condition": "(time0.value == true) && (hidetimepanel.value === false)"
+      },
+      "time1": {
+        "index": 46,
+        "order": 146,
+        "group": "times",
+        "type": "bool",
+        "text": "Time-1",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "clabel1": {
+        "index": 47,
+        "order": 147,
+        "group": "times",
+        "type": "textinput",
+        "text": "Label",
+        "value": "CEST",
+        "condition": "(time1.value == true) && (hidetimepanel.value === false)"
+      },
+      "timezone1": {
+        "index": 48,
+        "order": 148,
+        "group": "times",
+        "type": "textinput",
+        "text": "Timezone",
+        "value": "Europe/Berlin",
+        "condition": "(time1.value == true) && (hidetimepanel.value === false)"
+      },
+      "time2": {
+        "index": 49,
+        "order": 149,
+        "group": "times",
+        "type": "bool",
+        "text": "Time-2",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "clabel2": {
+        "index": 50,
+        "order": 150,
+        "group": "times",
+        "type": "textinput",
+        "text": "Label",
+        "value": "UTC",
+        "condition": "(time2.value == true) && (hidetimepanel.value === false)"
+      },
+      "timezone2": {
+        "index": 51,
+        "order": 151,
+        "group": "times",
+        "type": "textinput",
+        "text": "Timezone",
+        "value": "UTC",
+        "condition": "(time2.value == true) && (hidetimepanel.value === false)"
+      },
+      "time3": {
+        "index": 52,
+        "order": 152,
+        "group": "times",
+        "type": "bool",
+        "text": "Time-3",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "clabel3": {
+        "index": 53,
+        "order": 153,
+        "group": "times",
+        "type": "textinput",
+        "text": "Label",
+        "value": "PST",
+        "condition": "(time3.value == true) && (hidetimepanel.value === false)"
+      },
+      "timezone3": {
+        "index": 54,
+        "order": 154,
+        "group": "times",
+        "type": "textinput",
+        "text": "Timezone",
+        "value": "America/Los_Angeles",
+        "condition": "(time3.value == true) && (hidetimepanel.value === false)"
+      },
+      "time4": {
+        "index": 55,
+        "order": 155,
+        "group": "times",
+        "type": "bool",
+        "text": "Time-4",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "clabel4": {
+        "index": 56,
+        "order": 156,
+        "group": "times",
+        "type": "textinput",
+        "text": "Label",
+        "value": "IST",
+        "condition": "(time4.value == true) && (hidetimepanel.value === false)"
+      },
+      "timezone4": {
+        "index": 57,
+        "order": 157,
+        "group": "times",
+        "type": "textinput",
+        "text": "Timezone",
+        "value": "Asia/Kolkata",
+        "condition": "(time4.value == true) && (hidetimepanel.value === false)"
+      },
+      "hidetimetopdivider": {
+        "index": 58,
+        "order": 158,
+        "group": "times",
+        "type": "bool",
+        "text": "Hide Divider Time Top",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "hidetimebottomdivider": {
+        "index": 59,
+        "order": 159,
+        "group": "times",
+        "type": "bool",
+        "text": "Hide Divider Time Bottom",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "customizecolors_times": {
+        "index": 60,
+        "order": 160,
+        "group": "times",
+        "type": "bool",
+        "text": "Customize Colors",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "timetitlecolor": {
+        "index": 61,
+        "order": 161,
+        "group": "times",
+        "type": "color",
+        "text": "Title Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timelabelcolor": {
+        "index": 62,
+        "order": 162,
+        "group": "times",
+        "type": "color",
+        "text": "Label Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timedaytodaycolor": {
+        "index": 63,
+        "order": 163,
+        "group": "times",
+        "type": "color",
+        "text": "Today Color",
+        "value": "0.8980392156862745 0.7529411764705882 0.4823529411764706",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timedayyesterdaycolor": {
+        "index": 64,
+        "order": 164,
+        "group": "times",
+        "type": "color",
+        "text": "Yesterday Color",
+        "value": "0.8980392156862745 0.7529411764705882 0.4823529411764706",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timedaytomorrowcolor": {
+        "index": 65,
+        "order": 165,
+        "group": "times",
+        "type": "color",
+        "text": "Tomorrow Color",
+        "value": "0.8980392156862745 0.7529411764705882 0.4823529411764706",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "time24color": {
+        "index": 66,
+        "order": 166,
+        "group": "times",
+        "type": "color",
+        "text": "24 Hour Time Color",
+        "value": "0.33725490196078434 0.7137254901960784 0.7607843137254902",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timeseparatorcolor": {
+        "index": 67,
+        "order": 167,
+        "group": "times",
+        "type": "color",
+        "text": "Separator Color",
+        "value": "0.8941176470588236 0.9294117647058824 0.9176470588235294",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "time12color": {
+        "index": 68,
+        "order": 168,
+        "group": "times",
+        "type": "color",
+        "text": "12 Hour Time Color",
+        "value": "0.7764705882352941 0.47058823529411764 0.8666666666666667",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timeprogressbracketcolor": {
+        "index": 69,
+        "order": 169,
+        "group": "times",
+        "type": "color",
+        "text": "Progress Bracket Color",
+        "value": "0.8941176470588236 0.9294117647058824 0.9176470588235294",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timeprogressmorningcolor": {
+        "index": 70,
+        "order": 170,
+        "group": "times",
+        "type": "color",
+        "text": "Progress Morning Color",
+        "value": "0.3803921568627451 0.6862745098039216 0.9372549019607843",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timeprogressnooncolor": {
+        "index": 71,
+        "order": 171,
+        "group": "times",
+        "type": "color",
+        "text": "Progress Noon Color",
+        "value": "0.8980392156862745 0.7529411764705882 0.4823529411764706",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timeprogressnightcolor": {
+        "index": 72,
+        "order": 172,
+        "group": "times",
+        "type": "color",
+        "text": "Progress Night Color",
+        "value": "0.3803921568627451 0.6862745098039216 0.9372549019607843",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timeprogresspercentagecolor": {
+        "index": 73,
+        "order": 173,
+        "group": "times",
+        "type": "color",
+        "text": "Progress Percentage Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timetopdividercolor": {
+        "index": 74,
+        "order": 174,
+        "group": "times",
+        "type": "color",
+        "text": "Divider Time Top Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timebottomdividercolor": {
+        "index": 75,
+        "order": 175,
+        "group": "times",
+        "type": "color",
+        "text": "Divider Time Bottom Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_times.value === true)"
+      },
+      "timers": {
+        "index": 76,
+        "order": 176,
+        "type": "group",
+        "text": "Timers",
+        "value": ""
+      },
+      "timerstext": {
+        "index": 77,
+        "order": 177,
+        "group": "timers",
+        "type": "text",
+        "text": "Use DD/MM/YYYY for countdowns<br>or DD/MM for repeated events",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "timer0": {
+        "index": 78,
+        "order": 178,
+        "group": "timers",
+        "type": "bool",
+        "text": "Timer-0",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "tlabel0": {
+        "index": 79,
+        "order": 179,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Label",
+        "value": "NEW_YEAR",
+        "condition": "(timer0.value == true) && (hidetimepanel.value === false)"
+      },
+      "tdate0": {
+        "index": 80,
+        "order": 180,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Date",
+        "value": "1/1",
+        "condition": "(timer0.value == true) && (hidetimepanel.value === false)"
+      },
+      "timer1": {
+        "index": 81,
+        "order": 181,
+        "group": "timers",
+        "type": "bool",
+        "text": "Timer-1",
+        "value": true,
+        "condition": "hidetimepanel.value === false"
+      },
+      "tlabel1": {
+        "index": 82,
+        "order": 182,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Label",
+        "value": "YEAR_2000",
+        "condition": "(timer1.value == true) && (hidetimepanel.value === false)"
+      },
+      "tdate1": {
+        "index": 83,
+        "order": 183,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Date",
+        "value": "1/1/2000",
+        "condition": "(timer1.value == true) && (hidetimepanel.value === false)"
+      },
+      "timer2": {
+        "index": 84,
+        "order": 184,
+        "group": "timers",
+        "type": "bool",
+        "text": "Timer-2",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "tlabel2": {
+        "index": 85,
+        "order": 185,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Label",
+        "value": "",
+        "condition": "(timer2.value == true) && (hidetimepanel.value === false)"
+      },
+      "tdate2": {
+        "index": 86,
+        "order": 186,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Date",
+        "value": "",
+        "condition": "(timer2.value == true) && (hidetimepanel.value === false)"
+      },
+      "timer3": {
+        "index": 87,
+        "order": 187,
+        "group": "timers",
+        "type": "bool",
+        "text": "Timer-3",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "tlabel3": {
+        "index": 88,
+        "order": 188,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Label",
+        "value": "",
+        "condition": "(timer3.value == true) && (hidetimepanel.value === false)"
+      },
+      "tdate3": {
+        "index": 89,
+        "order": 189,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Date",
+        "value": "",
+        "condition": "(timer3.value == true) && (hidetimepanel.value === false)"
+      },
+      "timer4": {
+        "index": 90,
+        "order": 190,
+        "group": "timers",
+        "type": "bool",
+        "text": "Timer-4",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "tlabel4": {
+        "index": 91,
+        "order": 191,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Label",
+        "value": "",
+        "condition": "(timer4.value == true) && (hidetimepanel.value === false)"
+      },
+      "tdate4": {
+        "index": 92,
+        "order": 192,
+        "group": "timers",
+        "type": "textinput",
+        "text": "Date",
+        "value": "",
+        "condition": "(timer4.value == true) && (hidetimepanel.value === false)"
+      },
+      "customizecolors_timers": {
+        "index": 93,
+        "order": 193,
+        "group": "timers",
+        "type": "bool",
+        "text": "Customize Colors",
+        "value": false,
+        "condition": "hidetimepanel.value === false"
+      },
+      "timertitlecolor": {
+        "index": 94,
+        "order": 194,
+        "group": "timers",
+        "type": "color",
+        "text": "Title Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timertypecolor": {
+        "index": 95,
+        "order": 195,
+        "group": "timers",
+        "type": "color",
+        "text": "Type Color",
+        "value": "0.3803921568627451 0.6862745098039216 0.9372549019607843",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timerlabelcolor": {
+        "index": 96,
+        "order": 196,
+        "group": "timers",
+        "type": "color",
+        "text": "Label Color",
+        "value": "0.8980392156862745 0.7529411764705882 0.4823529411764706",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timerdaysleftcolor": {
+        "index": 97,
+        "order": 197,
+        "group": "timers",
+        "type": "color",
+        "text": "Days Left Color",
+        "value": "0.8784313725490196 0.4235294117647059 0.4588235294117647",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timerdayssooncolor": {
+        "index": 98,
+        "order": 198,
+        "group": "timers",
+        "type": "color",
+        "text": "1 Day Left Color",
+        "value": "0.9490196078431372 0.5450980392156862 0.5098039215686274",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timerdaystodaycolor": {
+        "index": 99,
+        "order": 199,
+        "group": "timers",
+        "type": "color",
+        "text": "Today Color",
+        "value": "0.33725490196078434 0.7137254901960784 0.7607843137254902",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timerdaysagocolor": {
+        "index": 100,
+        "order": 200,
+        "group": "timers",
+        "type": "color",
+        "text": "Days Ago Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "timerdaysinvalidcolor": {
+        "index": 101,
+        "order": 201,
+        "group": "timers",
+        "type": "color",
+        "text": "Invalid Color",
+        "value": "0.9490196078431372 0.5450980392156862 0.5098039215686274",
+        "condition": "(hidetimepanel.value === false) && (customizecolors_timers.value === true)"
+      },
+      "graphs": {
+        "index": 102,
+        "order": 202,
+        "type": "group",
+        "text": "Graphs",
+        "value": ""
+      },
+      "hidegraphspanel": {
+        "index": 103,
+        "order": 203,
+        "group": "graphs",
+        "type": "bool",
+        "text": "Hide",
+        "value": false,
+        "condition": ""
+      },
+      "graphshelpernote": {
+        "index": 104,
+        "order": 204,
+        "group": "graphs",
+        "type": "text",
+        "text": "<small>Live CPU / network data needs the metrics helper. Run tools\\install-autostart.cmd once to start it with Windows. Without it graphs show mock data.</small>",
+        "value": false,
+        "condition": "hidegraphspanel.value === false"
+      },
+      "graph1height": {
+        "index": 105,
+        "order": 205,
+        "group": "graphs",
+        "type": "slider",
+        "text": "Graph 1 Height",
+        "value": 11,
+        "condition": "hidegraphspanel.value === false",
+        "fraction": false,
+        "min": 5,
+        "max": 30,
+        "step": 1
+      },
+      "graph2height": {
+        "index": 106,
+        "order": 206,
+        "group": "graphs",
+        "type": "slider",
+        "text": "Graph 2 Height",
+        "value": 11,
+        "condition": "hidegraphspanel.value === false",
+        "fraction": false,
+        "min": 5,
+        "max": 30,
+        "step": 1
+      },
+      "graph1spacebefore": {
+        "index": 107,
+        "order": 207,
+        "group": "graphs",
+        "type": "slider",
+        "text": "Graph 1 Space Before (ch)",
+        "value": 0,
+        "condition": "hidegraphspanel.value === false",
+        "fraction": false,
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "graph2spacebefore": {
+        "index": 108,
+        "order": 208,
+        "group": "graphs",
+        "type": "slider",
+        "text": "Graph 2 Space Before (ch)",
+        "value": 0,
+        "condition": "hidegraphspanel.value === false",
+        "fraction": false,
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "hidegraph1topdivider": {
+        "index": 109,
+        "order": 209,
+        "group": "graphs",
+        "type": "bool",
+        "text": "Hide Divider Graph 1 Top",
+        "value": false,
+        "condition": "hidegraphspanel.value === false"
+      },
+      "hidegraph1bottomdivider": {
+        "index": 110,
+        "order": 210,
+        "group": "graphs",
+        "type": "bool",
+        "text": "Hide Divider Graph 1 Bottom",
+        "value": false,
+        "condition": "hidegraphspanel.value === false"
+      },
+      "hidegraph2topdivider": {
+        "index": 111,
+        "order": 211,
+        "group": "graphs",
+        "type": "bool",
+        "text": "Hide Divider Graph 2 Top",
+        "value": false,
+        "condition": "hidegraphspanel.value === false"
+      },
+      "hidegraph2bottomdivider": {
+        "index": 112,
+        "order": 212,
+        "group": "graphs",
+        "type": "bool",
+        "text": "Hide Divider Graph 2 Bottom",
+        "value": false,
+        "condition": "hidegraphspanel.value === false"
+      },
+      "customizecolors_graphs": {
+        "index": 113,
+        "order": 213,
+        "group": "graphs",
+        "type": "bool",
+        "text": "Customize Colors",
+        "value": false,
+        "condition": "hidegraphspanel.value === false"
+      },
+      "graph1color": {
+        "index": 114,
+        "order": 214,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 1 Window Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1bigcolor": {
+        "index": 115,
+        "order": 215,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 1 Big Text Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1linecolor": {
+        "index": 116,
+        "order": 216,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 1 Line Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1fillcolor": {
+        "index": 117,
+        "order": 217,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 1 Fill Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1tooltipcolor": {
+        "index": 118,
+        "order": 218,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 1 Tooltip Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1titlecolor": {
+        "index": 119,
+        "order": 219,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 1 Title Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2color": {
+        "index": 120,
+        "order": 220,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Window Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2bigcolor": {
+        "index": 121,
+        "order": 221,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Big Text Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2linecolor": {
+        "index": 122,
+        "order": 222,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Line Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2fillcolor": {
+        "index": 123,
+        "order": 223,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Fill Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2tooltipcolor": {
+        "index": 124,
+        "order": 224,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Tooltip Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2titlecolor": {
+        "index": 125,
+        "order": 225,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Title Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2helpercolor": {
+        "index": 126,
+        "order": 226,
+        "group": "graphs",
+        "type": "color",
+        "text": "Graph 2 Helper Lines Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1topdividercolor": {
+        "index": 127,
+        "order": 227,
+        "group": "graphs",
+        "type": "color",
+        "text": "Divider Graph 1 Top Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph1bottomdividercolor": {
+        "index": 128,
+        "order": 228,
+        "group": "graphs",
+        "type": "color",
+        "text": "Divider Graph 1 Bottom Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2topdividercolor": {
+        "index": 129,
+        "order": 229,
+        "group": "graphs",
+        "type": "color",
+        "text": "Divider Graph 2 Top Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "graph2bottomdividercolor": {
+        "index": 130,
+        "order": 230,
+        "group": "graphs",
+        "type": "color",
+        "text": "Divider Graph 2 Bottom Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hidegraphspanel.value === false) && (customizecolors_graphs.value === true)"
+      },
+      "audio": {
+        "index": 131,
+        "order": 231,
+        "type": "group",
+        "text": "Audio & Media",
+        "value": ""
+      },
+      "hideaudiopanel": {
+        "index": 132,
+        "order": 232,
+        "group": "audio",
+        "type": "bool",
+        "text": "Hide",
+        "value": false,
+        "condition": ""
+      },
+      "showextras": {
+        "index": 133,
+        "order": 233,
+        "group": "audio",
+        "type": "bool",
+        "text": "Show Extra Sliders (Bass/Mid/Treble)",
+        "value": true,
+        "condition": "hideaudiopanel.value === false"
+      },
+      "smoothness": {
+        "index": 134,
+        "order": 234,
+        "group": "audio",
+        "type": "slider",
+        "text": "Smoothness",
+        "value": 0.6,
+        "condition": "hideaudiopanel.value === false",
+        "fraction": true,
+        "min": 0,
+        "max": 0.9,
+        "step": 0.1,
+        "precision": 2
+      },
+      "volume_sensitivity": {
+        "index": 135,
+        "order": 235,
+        "group": "audio",
+        "type": "slider",
+        "text": "Sensitivity",
+        "value": 1,
+        "condition": "hideaudiopanel.value === false",
+        "fraction": true,
+        "min": 0.1,
+        "max": 10,
+        "step": 0.1,
+        "precision": 2
+      },
+      "seekbarfillchar": {
+        "index": 136,
+        "order": 236,
+        "group": "audio",
+        "type": "textinput",
+        "text": "Seekbar Progress Character",
+        "value": "=",
+        "condition": "hideaudiopanel.value === false"
+      },
+      "hideaudiovisualizertopdivider": {
+        "index": 137,
+        "order": 237,
+        "group": "audio",
+        "type": "bool",
+        "text": "Hide Divider Audio Visualizer Top",
+        "value": false,
+        "condition": "hideaudiopanel.value === false"
+      },
+      "hideaudiovisualizerbottomdivider": {
+        "index": 138,
+        "order": 238,
+        "group": "audio",
+        "type": "bool",
+        "text": "Hide Divider Audio Visualizer Bottom",
+        "value": false,
+        "condition": "hideaudiopanel.value === false"
+      },
+      "hideaudioseekbartopdivider": {
+        "index": 139,
+        "order": 239,
+        "group": "audio",
+        "type": "bool",
+        "text": "Hide Divider Audio Seekbar Top",
+        "value": false,
+        "condition": "hideaudiopanel.value === false"
+      },
+      "customizecolors_audio": {
+        "index": 140,
+        "order": 240,
+        "group": "audio",
+        "type": "bool",
+        "text": "Customize Colors",
+        "value": false,
+        "condition": "hideaudiopanel.value === false"
+      },
+      "audiobracketcolor": {
+        "index": 141,
+        "order": 241,
+        "group": "audio",
+        "type": "color",
+        "text": "Audio Brackets Color",
+        "value": "1 1 1",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "audiolabelcolor": {
+        "index": 142,
+        "order": 242,
+        "group": "audio",
+        "type": "color",
+        "text": "Audio Label Color",
+        "value": "0.8941176470588236 0.9294117647058824 0.9176470588235294",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "audiotimecolor": {
+        "index": 143,
+        "order": 243,
+        "group": "audio",
+        "type": "color",
+        "text": "Audio Time Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "mediacolumnscolor": {
+        "index": 144,
+        "order": 244,
+        "group": "audio",
+        "type": "color",
+        "text": "Media Columns Color",
+        "value": "0.6941176470588235 0.9490196078431372 0.6549019607843137",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "medianamecolor": {
+        "index": 145,
+        "order": 245,
+        "group": "audio",
+        "type": "color",
+        "text": "Media Name Color",
+        "value": "0.6941176470588235 0.9490196078431372 0.6549019607843137",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "mediastatuscolor": {
+        "index": 146,
+        "order": 246,
+        "group": "audio",
+        "type": "color",
+        "text": "Media Status Color",
+        "value": "0.6941176470588235 0.9490196078431372 0.6549019607843137",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "mediatimestampcolor": {
+        "index": 147,
+        "order": 247,
+        "group": "audio",
+        "type": "color",
+        "text": "Media Timestamps Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "seekbarprogresscolor": {
+        "index": 148,
+        "order": 248,
+        "group": "audio",
+        "type": "color",
+        "text": "Seekbar Progress Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "seekbartrackcolor": {
+        "index": 149,
+        "order": 249,
+        "group": "audio",
+        "type": "color",
+        "text": "Seekbar Track Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "audiovisualizertopdividercolor": {
+        "index": 150,
+        "order": 250,
+        "group": "audio",
+        "type": "color",
+        "text": "Divider Audio Visualizer Top Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "audiovisualizerbottomdividercolor": {
+        "index": 151,
+        "order": 251,
+        "group": "audio",
+        "type": "color",
+        "text": "Divider Audio Visualizer Bottom Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "audioseekbartopdividercolor": {
+        "index": 152,
+        "order": 252,
+        "group": "audio",
+        "type": "color",
+        "text": "Divider Audio Seekbar Top Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideaudiopanel.value === false) && (customizecolors_audio.value === true)"
+      },
+      "asciiart": {
+        "index": 153,
+        "order": 253,
+        "type": "group",
+        "text": "ASCII Art",
+        "value": ""
+      },
+      "hideasciiart": {
+        "index": 154,
+        "order": 254,
+        "group": "asciiart",
+        "type": "bool",
+        "text": "Hide",
+        "value": false,
+        "condition": ""
+      },
+      "asciiresolution": {
+        "index": 155,
+        "order": 255,
+        "group": "asciiart",
+        "type": "slider",
+        "text": "Resolution (Higher = Lag)",
+        "value": 50,
+        "condition": "hideasciiart.value === false",
+        "fraction": false,
+        "min": 50,
+        "max": 300,
+        "step": 25
+      },
+      "usemediaart": {
+        "index": 156,
+        "order": 256,
+        "group": "asciiart",
+        "type": "bool",
+        "text": "Use Media Art",
+        "value": true,
+        "condition": "hideasciiart.value === false"
+      },
+      "defaultimage": {
+        "index": 157,
+        "order": 257,
+        "group": "asciiart",
+        "type": "file",
+        "text": "Logo",
+        "value": "",
+        "condition": "hideasciiart.value === false"
+      },
+      "coloredascii": {
+        "index": 158,
+        "order": 258,
+        "group": "asciiart",
+        "type": "bool",
+        "text": "Colored Art",
+        "value": true,
+        "condition": "hideasciiart.value === false"
+      },
+      "ascii_color_mode": {
+        "index": 159,
+        "order": 259,
+        "group": "asciiart",
+        "type": "combo",
+        "text": "Color Mode",
+        "value": "theme",
+        "condition": "(hideasciiart.value === false) && (coloredascii.value == true)",
+        "options": [
+          {
+            "label": "Theme",
+            "value": "theme"
+          },
+          {
+            "label": "Image",
+            "value": "image"
+          }
+        ]
+      },
+      "saturation": {
+        "index": 160,
+        "order": 260,
+        "group": "asciiart",
+        "type": "slider",
+        "text": "Saturation<small><br>0 = Grayscale<br>1 = Normal<br>> 1 = More Vivid</small>",
+        "value": 1,
+        "condition": "(hideasciiart.value === false) && (coloredascii.value == true)",
+        "fraction": true,
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "precision": 2
+      },
+      "artbackground": {
+        "index": 161,
+        "order": 261,
+        "group": "asciiart",
+        "type": "bool",
+        "text": "Background",
+        "value": false,
+        "condition": "hideasciiart.value === false"
+      },
+      "customizecolors_ascii": {
+        "index": 162,
+        "order": 262,
+        "group": "asciiart",
+        "type": "bool",
+        "text": "Customize Colors",
+        "value": false,
+        "condition": "hideasciiart.value === false"
+      },
+      "ascii_static_color": {
+        "index": 163,
+        "order": 263,
+        "group": "asciiart",
+        "type": "color",
+        "text": "Static Color",
+        "value": "0.8941176470588236 0.9294117647058824 0.9176470588235294",
+        "condition": "(hideasciiart.value === false) && (coloredascii.value == false) && (customizecolors_ascii.value === true)"
+      },
+      "artbackgroundcolor": {
+        "index": 164,
+        "order": 264,
+        "group": "asciiart",
+        "type": "color",
+        "text": "Background Color",
+        "value": "0.050980392156862744 0.06666666666666667 0.06274509803921569",
+        "condition": "(hideasciiart.value === false) && (artbackground.value === true) && (customizecolors_ascii.value === true)"
+      },
+      "gameoflifecolor": {
+        "index": 165,
+        "order": 265,
+        "group": "asciiart",
+        "type": "color",
+        "text": "Game of Life Cell Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "(hideasciiart.value === false) && (customizecolors_ascii.value === true)"
+      },
+      "gameoflifeframecolor": {
+        "index": 166,
+        "order": 266,
+        "group": "asciiart",
+        "type": "color",
+        "text": "Game Of Life Frame Color",
+        "value": "0.3607843137254902 0.38823529411764707 0.4392156862745098",
+        "condition": "(hideasciiart.value === false) && (customizecolors_ascii.value === true)"
+      },
+      "systeminformation": {
+        "index": 167,
+        "order": 267,
+        "type": "group",
+        "text": "System Information",
+        "value": ""
+      },
+      "hostname": {
+        "index": 168,
+        "order": 268,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Hostname",
+        "value": "[USER]",
+        "condition": ""
+      },
+      "ip": {
+        "index": 169,
+        "order": 269,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "IP",
+        "value": "192.168.0.2",
+        "condition": ""
+      },
+      "os": {
+        "index": 170,
+        "order": 270,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "OS",
+        "value": "Windows 11",
+        "condition": ""
+      },
+      "kernel": {
+        "index": 171,
+        "order": 271,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Kernel",
+        "value": "10.0.26100.4656",
+        "condition": ""
+      },
+      "shell": {
+        "index": 172,
+        "order": 272,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Shell",
+        "value": "PowerShell 7.4",
+        "condition": ""
+      },
+      "cpu": {
+        "index": 173,
+        "order": 273,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "CPU",
+        "value": "[CPU]",
+        "condition": ""
+      },
+      "gpu": {
+        "index": 174,
+        "order": 274,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "GPU",
+        "value": "[GPU]",
+        "condition": ""
+      },
+      "ram": {
+        "index": 175,
+        "order": 275,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "RAM",
+        "value": "32G",
+        "condition": ""
+      },
+      "disk": {
+        "index": 176,
+        "order": 276,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Disk",
+        "value": "930G",
+        "condition": ""
+      },
+      "system_additional_information": {
+        "index": 177,
+        "order": 277,
+        "group": "systeminformation",
+        "type": "bool",
+        "text": "Additional Information",
+        "value": true,
+        "condition": ""
+      },
+      "system_custom_rows": {
+        "index": 178,
+        "order": 278,
+        "group": "systeminformation",
+        "type": "slider",
+        "text": "Custom Rows",
+        "value": 11,
+        "condition": "system_additional_information.value === true",
+        "fraction": false,
+        "min": 0,
+        "max": 11,
+        "step": 1
+      },
+      "system_stats_prop-1": {
+        "index": 179,
+        "order": 279,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 1)"
+      },
+      "system_stats_value-1": {
+        "index": 180,
+        "order": 280,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 1)"
+      },
+      "system_stats_divider-1": {
+        "index": 181,
+        "order": 281,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 2)"
+      },
+      "system_stats_prop-2": {
+        "index": 182,
+        "order": 282,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 2)"
+      },
+      "system_stats_value-2": {
+        "index": 183,
+        "order": 283,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 2)"
+      },
+      "system_stats_divider-2": {
+        "index": 184,
+        "order": 284,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 3)"
+      },
+      "system_stats_prop-3": {
+        "index": 185,
+        "order": 285,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 3)"
+      },
+      "system_stats_value-3": {
+        "index": 186,
+        "order": 286,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 3)"
+      },
+      "system_stats_divider-3": {
+        "index": 187,
+        "order": 287,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 4)"
+      },
+      "system_stats_prop-4": {
+        "index": 188,
+        "order": 288,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 4)"
+      },
+      "system_stats_value-4": {
+        "index": 189,
+        "order": 289,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 4)"
+      },
+      "system_stats_divider-4": {
+        "index": 190,
+        "order": 290,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 5)"
+      },
+      "system_stats_prop-5": {
+        "index": 191,
+        "order": 291,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 5)"
+      },
+      "system_stats_value-5": {
+        "index": 192,
+        "order": 292,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 5)"
+      },
+      "system_stats_divider-5": {
+        "index": 193,
+        "order": 293,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 6)"
+      },
+      "system_stats_prop-6": {
+        "index": 194,
+        "order": 294,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 6)"
+      },
+      "system_stats_value-6": {
+        "index": 195,
+        "order": 295,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 6)"
+      },
+      "system_stats_divider-6": {
+        "index": 196,
+        "order": 296,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 7)"
+      },
+      "system_stats_prop-7": {
+        "index": 197,
+        "order": 297,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 7)"
+      },
+      "system_stats_value-7": {
+        "index": 198,
+        "order": 298,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 7)"
+      },
+      "system_stats_divider-7": {
+        "index": 199,
+        "order": 299,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 8)"
+      },
+      "system_stats_prop-8": {
+        "index": 200,
+        "order": 300,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 8)"
+      },
+      "system_stats_value-8": {
+        "index": 201,
+        "order": 301,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 8)"
+      },
+      "system_stats_divider-8": {
+        "index": 202,
+        "order": 302,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 9)"
+      },
+      "system_stats_prop-9": {
+        "index": 203,
+        "order": 303,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 9)"
+      },
+      "system_stats_value-9": {
+        "index": 204,
+        "order": 304,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 9)"
+      },
+      "system_stats_divider-9": {
+        "index": 205,
+        "order": 305,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 10)"
+      },
+      "system_stats_prop-10": {
+        "index": 206,
+        "order": 306,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 10)"
+      },
+      "system_stats_value-10": {
+        "index": 207,
+        "order": 307,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 10)"
+      },
+      "system_stats_divider-10": {
+        "index": 208,
+        "order": 308,
+        "group": "systeminformation",
+        "type": "text",
+        "text": "---------",
+        "value": false,
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 11)"
+      },
+      "system_stats_prop-11": {
+        "index": 209,
+        "order": 309,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Property",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 11)"
+      },
+      "system_stats_value-11": {
+        "index": 210,
+        "order": 310,
+        "group": "systeminformation",
+        "type": "textinput",
+        "text": "Value",
+        "value": "",
+        "condition": "(system_additional_information.value === true) && (system_custom_rows.value >= 11)"
+      },
+      "customizecolors_system": {
+        "index": 211,
+        "order": 311,
+        "group": "systeminformation",
+        "type": "bool",
+        "text": "Customize Colors",
+        "value": false,
+        "condition": ""
+      },
+      "systeminfotitlecolor": {
+        "index": 212,
+        "order": 312,
+        "group": "systeminformation",
+        "type": "color",
+        "text": "System Titles Color",
+        "value": "0.6941176470588235 0.9490196078431372 0.6549019607843137",
+        "condition": "customizecolors_system.value === true"
+      },
+      "systeminfovaluecolor": {
+        "index": 213,
+        "order": 313,
+        "group": "systeminformation",
+        "type": "color",
+        "text": "System Values Color",
+        "value": "0.596078431372549 0.7647058823529411 0.4745098039215686",
+        "condition": "customizecolors_system.value === true"
+      }
+    },
+    "supportsaudioprocessing": true
+  },
+  "preview": "preview.gif",
+  "ratingsex": "none",
+  "ratingviolence": "none",
+  "supportsAudio": true,
+  "tags": [
+    "Retro"
+  ],
+  "title": "Living-Terminal",
+  "type": "web",
+  "version": 10
+}
